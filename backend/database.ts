@@ -192,7 +192,8 @@ export const createUser = (userDetails: Partial<User>): User => {
     createdAt: new Date(),
     modifiedAt: new Date(),
   };
-
+  
+  console.log(userDetails.password)
   saveUser(user);
   return user;
 };
